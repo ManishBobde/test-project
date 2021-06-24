@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <label
+      for="email"
+    >
+      Email:
+    </label>
+    <input
+      type="email"
+      value=""
+    />
+  </div>
+  <button
+    disabled=""
+  >
+    Next
+  </button>
+</DocumentFragment>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="summary"
+  >
+    <div>
+      First Name: john
+    </div>
+    <div>
+      Last Name: doe
+    </div>
+    <div>
+      Birth Date: 1998-09-19
+    </div>
+    <div>
+      Email: johndoe@test.com
+    </div>
+    <div>
+      Age: 43
+    </div>
+    <div>
+      <a
+        href="/purchased=dev_ins"
+      >
+        Purchase
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

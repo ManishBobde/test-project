@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <label
+      for="age"
+    >
+      Age:
+    </label>
+    <input
+      type="number"
+      value="0"
+    />
+  </div>
+  <button>
+    Next
+  </button>
+</DocumentFragment>
+`;
