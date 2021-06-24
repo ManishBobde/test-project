@@ -13,7 +13,7 @@ const AgeStep: React.FC<AgeStepProps> = (props) => {
         <input
           type="number"
           onChange={({ target: { value } }) => {
-            setAge(Number(value));
+            setAge(Math.abs(Number(value)));
           }}
           value={age}
         ></input>

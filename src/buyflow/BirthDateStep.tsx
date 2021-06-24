@@ -6,6 +6,7 @@ interface BirthDateStepProps {
 
 const BirthDateStep: React.FC<BirthDateStepProps> = (props) => {
   const [birthDate, setBirthDate] = useState("");
+  console.log(new Date().toISOString().split("T")[0]);
   return (
     <>
       <div>
@@ -13,10 +14,10 @@ const BirthDateStep: React.FC<BirthDateStepProps> = (props) => {
         <input
           type="date"
           onChange={({ target: { value } }) => {
-            console.log(value);
             setBirthDate(value);
           }}
           value={birthDate}
+          max={new Date().toISOString().split("T")[0]}
         ></input>
       </div>
       <button onClick={() => props.cb("birthDate", birthDate)}>Next</button>

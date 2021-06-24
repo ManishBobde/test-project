@@ -6,11 +6,10 @@ interface EmailStepProps {
 
 const EmailStep: React.FC<EmailStepProps> = (props) => {
   const [email, setEmail] = useState("");
-  const [validEmail, setValidEmail] = useState(false);
   const validateEmail = (value: string) => {
     const pattern = new RegExp(/(.+)@(\w+)\.(\w+)$/);
     const validEmailValue = pattern.test(value);
-    validEmailValue ? setValidEmail(true) : setValidEmail(false);
+    !validEmailValue && setEmail("");
     !validEmailValue && alert("please enter a valid email");
   };
   return (
@@ -26,9 +25,7 @@ const EmailStep: React.FC<EmailStepProps> = (props) => {
           onBlur={(e) => validateEmail(e.target.value)}
         ></input>
       </div>
-      <button disabled={!validEmail} onClick={() => props.cb("email", email)}>
-        Next
-      </button>
+      <button onClick={() => props.cb("email", email)}>Next</button>
     </>
   );
 };
